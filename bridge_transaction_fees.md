@@ -59,9 +59,9 @@ A bridge user is sending an NFT from BSC to Velas.
 |:-:|:-:|:-:|:-:|
 | Divided | VLX | 1 | $0.3257 |
 | Dividend | BSC | 1 | $465.35 |
-| Quotent |  1VLX /  1 BNB | 0.00069990329 | - |
-| Fee Estimation | in VLX | 0.00352905894 | $ 0.0011494145 |
-| The user sees | | 0.00000247 BNB | $ 0.0011494145 |
+| Quotent |  1 VLX /  1 BNB | 0.00069990329 | - |
+| Fee Estimation | VLX | 0.00352905894 | $ 0.0011494145 |
+| The user sees | BNB | 0.00000247 | $ 0.0011494145 |
 
 So, when a user is confirming the transaction in Metamask this is what (s)he will see:
 
