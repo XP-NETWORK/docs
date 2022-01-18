@@ -1,32 +1,33 @@
-# Exchange Rate Oracle (ERO)
+# Handling the bridge Transaction Fees
 
-**Oracles** are distributed off-chain nodes feeding information to the smart contracts. A *set* of oracles can be represented as <code>O<sub>delta</sub> = {o<sub>1</sub>, ..., o<sub>n</sub>}</code>.
+XP.network bridge allows the users to cover the gas fees on both chains (departure and destination) in the native tokens of the chain of origin. It is not only convenient, but, sometimes, it is the only possible way since some ledgers do not support the tokens of some others.
+
+:computer: ***_Fee Calculator_*** is a tool estimating fees on the target chain. Some chains have built in functionality that the tool is reusing. In other chains the tool runs the transaction in a sandboxed environment without sending it to the network. In both cases the result is the amount in the tokens of the chain of destination.
+
+The next step is converting the gas fee required on the target chain to the currency of the  network of NFT departure. This is where the XP.network ***Exchange Rate Oracles (EROs)*** come into play. EROs are responsible for collecting & providing the exchange rate via the USD equivalent for the supported currencies.
+
+:crystal_ball: ***_Oracles_*** are distributed off-chain nodes feeding information to the smart contracts. A ***set*** of oracles can be represented as <code>O<sub>delta</sub> = {o<sub>1</sub>, ..., o<sub>n</sub>}</code>.
+
+***_Resilience_*** of the ***set*** is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the `n * 2 / 3 + 1` benevolent oracles, while `n / 3 - 1` can be down, have narrow Internet bandwidth or be controlled by imaginary malicious adversaries.
+
+:heartpulse: ***_Heartbeat guardian_*** is a hardenning tool used for monitoring the state of the oracles. It querries each an every oracle every 5 seconds. If the oracles respond adequtely - the network is assumed to operate normally. If one or several oracles do not respond or respond abnormally - the team gets informed via an e-mail notification.
 
 
 
-**Resilience** of the *set* is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the `n * 2 / 3 + 1` benevolent oracles, while `n / 3 - 1` can be down or controlled by imaginary malicious adversaries.
+:dollar: ***_Supported Cryptocurrencies_***
 
-
-
-The XP.network ERO is responsible for collecting & providing the USD equivalent for the supported currencies.
-
-## Supported Cryptocurrencies
+XP.network Exchange Rate Oracles support all the native coins of the bridged networks:
 
 | Coin | Blockchain |
 |:-:|:-:|
 |XPNET|TBN |
 |EGLD|Elrond|
-|HT|HECO|
 |BNB|BSC|
 |ETH|Ethereum|
 |AVAX|Avalanche|
 |MATIC|Polygon |
 |FTM|Fantom |
-|ONE|Harmony |
 |TRX|Tron |
-|CELO|Celo |
-|ONT|Ontology |
-|STAKE|Stake |
 |ALGO|Algorand |
 |FUSE|Fuse |
 |XTZ|Tezos |
@@ -69,9 +70,9 @@ So, when a user is confirming the transaction in Metamask this is what (s)he wil
 ![Metamask View](assets/4.png)
 
 In fact, the user may pay even less. 
-1. The TX fee on BNB 0.000441595 BNB
-2. The fee on the target chain (Velas) 0.000002471877613277 BNB 
-3. Sum total: 0.00044406687 BNB ($ 0.20664652149)
+> 1. The TX fee on BNB 0.000441595 BNB
+> 2. The fee on the target chain (Velas) 0.000002471877613277 BNB 
+> 3. Sum total: 0.00044406687 BNB ($ 0.20664652149)
 
 Here's the transaction details on the Binance Smart Chain Explorer:
 
