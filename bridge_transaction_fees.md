@@ -12,6 +12,8 @@ The next step is converting the gas fee required on the target chain to the curr
 
 :heartpulse: ***_Heartbeat guardian_*** is a hardenning tool used for monitoring the state of the oracles. It querries each and every oracle every 5 seconds. If the oracles respond adequtely - the network is assumed to operate normally. If one or several oracles do not respond or respond abnormally - the team gets informed via an e-mail notification to be timely restore the functionality of the faulty network link.
 
+![TX Fees Scheme](assets/TX%20Fees.jpg)
+
 :dollar: ***_Supported Cryptocurrencies_***
 
 XP.network Exchange Rate Oracles support all the native coins of the bridged networks:
