@@ -10,9 +10,7 @@ The next step is converting the gas fee required on the target chain to the curr
 
 ***_Resilience_*** of the ***set*** is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the `n * 2 / 3 + 1` benevolent oracles, while `n / 3 - 1` can be down, have narrow Internet bandwidth or be controlled by imaginary malicious adversaries.
 
-:heartpulse: ***_Heartbeat guardian_*** is a hardenning tool used for monitoring the state of the oracles. It querries each an every oracle every 5 seconds. If the oracles respond adequtely - the network is assumed to operate normally. If one or several oracles do not respond or respond abnormally - the team gets informed via an e-mail notification.
-
-
+:heartpulse: ***_Heartbeat guardian_*** is a hardenning tool used for monitoring the state of the oracles. It querries each and every oracle every 5 seconds. If the oracles respond adequtely - the network is assumed to operate normally. If one or several oracles do not respond or respond abnormally - the team gets informed via an e-mail notification to be timely restore the functionality of the faulty network link.
 
 :dollar: ***_Supported Cryptocurrencies_***
 
@@ -35,9 +33,9 @@ XP.network Exchange Rate Oracles support all the native coins of the bridged net
 
 ## Efficiency
 
-To reduce the number of requests & ensure fast response, the tool caches the received batch result for 1 hour.
+To reduce the number of requests & ensure fast response, the tool caches the received batch result for 10 minutes.
 
-If the new batch is not available after the expiration of the hour, the 1+ hour long rate is returned.
+If the new batch is not available after the expiration of the hour, the 10+ minutes long rate is returned.
 
 ## Result
 
