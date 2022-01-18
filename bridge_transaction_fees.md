@@ -10,7 +10,7 @@ The next step is converting the gas fee required on the target chain to the curr
 
 ***_Resilience_*** of the ***set*** is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the `n * 2 / 3 + 1` benevolent oracles, while `n / 3 - 1` can be down, have narrow Internet bandwidth or be controlled by imaginary malicious adversaries.
 
-:heartpulse: ***_Heartbeat guardian_*** is a hardenning tool used for monitoring the state of the oracles. It querries each and every oracle every 5 seconds. If the oracles respond adequtely - the network is assumed to operate normally. If one or several oracles do not respond or respond abnormally - the team gets informed via an e-mail notification to be timely restore the functionality of the faulty network link.
+:heartpulse: ***_Heartbeat guardian_*** is a hardenning tool used for monitoring the state of the oracles. It querries each and every oracle every 5 seconds. If the oracles respond adequtely - the network is assumed to operate normally. If one or several oracles do not respond or respond abnormally - the team gets informed via an e-mail notification to timely restore the functionality of the faulty network link.
 
 ![TX Fees Scheme](assets/TX%20Fees.jpg)
 
