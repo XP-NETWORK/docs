@@ -2,14 +2,14 @@
 
 **Oracles** are distributed off-chain nodes feeding information to the smart contracts. A *set* of oracles can be represented as $O_\delta = \{o_1, ..., o_n\}$.
 
-**Resilience** of the *set* is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the $2/3*n + 1$ benevolent oracles, while $n/3-1$ can be down or controlled by imaginary malicious adversaries.
+**Resilience** of the *set* is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the $2/3*n + 1$ benevolent oracles, while $$$ n/3-1 $$$ can be down or controlled by imaginary malicious adversaries.
 
 The XP.network ERO is responsible for collecting & providing the USD equivalent for the supported currencies.
 
 ## Supported Cryptocurrencies
 
 | Coin | Blockchain |
-|:-:|:-:|:-:|
+|:-:|:-:|
 |XPNET|TBN |
 |EGLD|Elrond|
 |HT|HECO|
@@ -53,7 +53,7 @@ A bridge user is sending an NFT from BSC to Velas.
 ![Bridge NFTs View](assets/3.png)
 
 | Term | Cryptocurrencies | Actual figures | USD Equivalent |
-|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|
 | Divided | VLX | 1 | $0.3257 |
 | Dividend | BSC | 1 | $465.35 |
 | Quotent |  1VLX /  1 BNB | 0.00069990329 | - |
