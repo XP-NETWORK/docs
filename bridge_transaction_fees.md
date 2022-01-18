@@ -1,8 +1,12 @@
 # Exchange Rate Oracle (ERO)
 
-**Oracles** are distributed off-chain nodes feeding information to the smart contracts. A *set* of oracles can be represented as $O_\delta = \{o_1, ..., o_n\}$.
+**Oracles** are distributed off-chain nodes feeding information to the smart contracts. A *set* of oracles can be represented as <code>O<sub>delta</sub> = {o<sub>1</sub>, ..., o<sub>n</sub>}</code>.
 
-**Resilience** of the *set* is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the $2/3*n + 1$ benevolent oracles, while $$$ n/3-1 $$$ can be down or controlled by imaginary malicious adversaries.
+
+
+**Resilience** of the *set* is achieved through the *Byzantine fault tolerance* consensus. The *set* functions properly relying on the ![formula](http://www.sciweavers.org/tex2img.php?eq=2%2F3%2An%20%2B%201&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) benevolent oracles, while ![formula](http://www.sciweavers.org/tex2img.php?eq=n%2F3-1&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=) can be down or controlled by imaginary malicious adversaries.
+
+
 
 The XP.network ERO is responsible for collecting & providing the USD equivalent for the supported currencies.
 
@@ -40,9 +44,9 @@ The tool returns the exchange rate quotent of the two arbitrary Supported Curren
 
 | Term | Cryptocurrencies |
 |:-:|:-:|
-| $Divided$ | The foreign coin |
-| $Dividend$ | The native coin |
-| $Quotent$ | $1st / 2nd$ |
+| Divided | The foreign coin |
+| Dividend | The native coin |
+| Quotent | 1st / 2nd |
 
 We can multiply the fee estimation by the quotent and get the fee in the native currency.
 
