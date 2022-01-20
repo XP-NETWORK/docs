@@ -140,5 +140,22 @@ The main bridging screen allows to:
 1. Select one or multiple NFTs
 2. View NFT metadata
 3. Provide the bridge with the address of the receiver on the target chain
-4. Approve in the original NFT smart contract that the new **operator** 
+4. Approve in the original NFT smart contract that the new **operator** is the bridge SC
+5. Transfer one or multiple NFTs to the chain of destination
+
+
 ![NFT Index](assets/3.png)
+
+## 4. Signing the bridging transaction
+
+The Sender of the NFT(s) pays for the transactions on the local and the target chains in the native currency. It is very convenient for the payer. The bridge takes the burden of exchanging the coins in the background providing a smooth user experience. 
+
+The local and the foreign transaction fees are shown separately in the wallet for the clarity of the signer. The native chain gas fees are withdrawn by the blockchain to award the validators for their work. The foreign chain fees are collected by the bridge smart contract for reimbursing the costs of the bridge oracles, who pay in the target chain coins for submitting the bridge transactions.
+
+![TX hash](assets/4.png)
+
+## 5. Viewing the Results of Bridging
+
+Once the signature has been accepted the bridge will display the Transaction screen. There a user can click on the "View Txn" button to see the Transaction on the Explorer of the chain of departure.
+
+![Native Chain Explorer](assets/6.png)
